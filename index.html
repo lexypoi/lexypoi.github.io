@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEXYPOI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="about.html">TENTANG</a></li>
+            <li><a href="course.html">PEMESANAN</a></li>
+            <li><a href="contact.html">KONTAK</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Selamat Datang Di Toko Kami</h1>
+        <p>Mencari produk yang dijamin kualitasnya dengan harga yang terjangkau?<br />Marilah kunjungilah toko kami!</p>
+      </div>
+    </section>
+
+    <!------- campus ------>
+
+    <section class="campus">
+      <h1>Contoh</h1>
+      <p>Berikut beberapa model yang telah tersedia antara lain :</p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="img/versi1.jpg" />
+          <div class="layer">
+            <h3>VERSI 1</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="img/versi2.jpg" />
+          <div class="layer">
+            <h3>VERSI 2</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="img/versi3.jpg" />
+          <div class="layer">
+            <h3>VERSI 3</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- testimonials ----- -->
+
+    <section class="testimonials">
+      <h1>Dibuat oleh kelompok 5</h1>
+      <p>Dianggotakan dengan 4 orang yaitu :</p>
+
+      <div class="row">
+        <div class="testimonials-col">
+          <img src="img/pp.png" />
+          <div>
+            <h3>Zikri Ramadhan</h3>
+            <h4><i class="fa fa-instagram"></i> zikri_r20</h4>
+            <h4><i class="fa fa-whatsapp"></i> 0858-3770-0191</h4>
+          </div>
+        </div>
+        <div class="testimonials-col">
+          <img src="img/pp.png" />
+          <div>
+            <h3>Rohelyo William</h3>
+            <h4><i class="fa fa-instagram"></i> rohelyo.wiliam</h4>
+            <h4><i class="fa fa-whatsapp"></i> 0831-8130-5180</h4>
+          </div>
+        </div>
+        <div class="testimonials-col2">
+          <img src="img/pp.png" />
+          <div>
+            <h3>Syafril Huda</h3>
+            <h4><i class="fa fa-instagram"></i> syafrilhuda_</h4>
+            <h4><i class="fa fa-whatsapp"></i> 0822-8320-7576</h4>
+          </div>
+        </div>
+        <div class="testimonials-col2">
+          <img src="img/pp.png" />
+          <div>
+            <h3>Raffi Putra Syahrin</h3>
+            <h4><i class="fa fa-instagram"></i> raffip.s</h4>
+            <h4><i class="fa fa-whatsapp"></i> 0895-6285-89327</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------- Call To Action ------->
+
+    <section class="cta">
+      <h1>
+        Jika anda mempunyai masalah atau masukan<br />
+        Silahkan hubungi kontak kami
+      </h1>
+      <a href="contact.html" class="hero-btn">KONTAK KAMI</a>
+    </section>
+
+    <!------- Footer ------->
+
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Zikri Ramadhan</p>
+    </section>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

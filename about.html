@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEXYPOI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="about.html">TENTANG</a></li>
+            <li><a href="course.html">PEMESANAN</a></li>
+            <li><a href="contact.html">KONTAK</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Tentang Produk</h1>
+    </section>
+
+    <!----- about us content ---->
+
+    <sectionc class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Tempat Alat Tulis</h1>
+          <p>
+            Tempat alat tulis merupakan salah satu barang yang sangat dibutuhkan, khususnya bagi para pelajar untuk menyimpan alat alat tulis mereka seperti pensil, penghapus, pulpen, tipe-x, pensil warna, dan lain-lain yang biasanya
+            terbuat dari kain, metal, plastik dan berwarna warni serta bergambar agar menarik.
+          </p>
+          <p>
+            Karena hal itulah kami merancang tempat alat tulis yang terbuat dari botol bekas dengan tujuan memanfaatkan barang yang tidak terpakai lagi. Produk kami bukan hanya berguna untuk tempat alat tulis tapi juga untuk memperindah
+            ruang belajar. Walaupun dari barang bekas, namun kami dapat menjamin kualitas produk yang buat.
+          </p>
+          <p>Untuk harganya kami menjual seharga Rp.20.000/pcs nya.</p>
+        </div>
+        <div class="about-col">
+          <img src="img/versi1.jpg" />
+        </div>
+      </div>
+    </sectionc>
+
+    <!------- Footer ------->
+
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Zikri Ramadhan</p>
+    </section>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

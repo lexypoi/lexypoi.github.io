@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEXYPOI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="about.html">TENTANG</a></li>
+            <li><a href="course.html">PEMESANAN</a></li>
+            <li><a href="contact.html">KONTAK</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Pemesanan</h1>
+    </section>
+
+    <!----- Pemesanan ----->
+
+    <div class="container-contact100">
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form" id="whatsapp">
+          <span class="contact100-form-title">Order via WA</span>
+          <input class="tujuan" type="hidden" id="noAdmin" />
+          <div class="wrap-input100">
+            <span class="label-input100">Nama</span>
+            <label>
+              <input class="input100 nama" type="text" placeholder="Masukkan nama Anda" />
+            </label>
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100">
+            <span class="label-input100">Nomor WhatsApp</span>
+            <label>
+              <input class="input100 nowhatsapp" type="text" placeholder="08xxxxxxxxxx" />
+            </label>
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100">
+            <span class="label-input100">Alamat</span>
+            <label>
+              <textarea class="input100 alamat" placeholder="Masukkan alamat lengkap Anda"></textarea>
+            </label>
+            <span class="focus-input100"></span>
+          </div>
+          <div class="container-contact100-form-btn">
+            <div class="wrap-contact100-form-btn">
+              <div class="contact100-form-bgbtn"></div>
+              <a class="contact100-form-btn submit">Kirim</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!------- Footer ------->
+
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Zikri Ramadhan</p>
+    </section>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

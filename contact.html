@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEXYPOI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="about.html">TENTANG</a></li>
+            <li><a href="course.html">PEMESANAN</a></li>
+            <li><a href="contact.html">KONTAK</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Kontak</h1>
+    </section>
+
+    <!----- contact us ----->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.6767320136347!2d100.64464401470507!3d-0.8158396362996548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2b349fcbb67255%3A0xdb572b91932eb053!2sSD%20Inpres%2024%20Selayo!5e0!3m2!1sen!2sid!4v1636010979054!5m2!1sen!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Alamat</h5>
+              <p>Selayo, Kec.Kubung, Solok, Sumatera Barat 27361</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>No.HP</h5>
+              <p>0858-3770-0191</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>Email</h5>
+              <p>zikriramadhan2104@gmail.com</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Masukkan nama anda" required />
+            <input type="email" placeholder="Masukkan email anda" required />
+            <input type="text" placeholder="Masukkan Judul" required />
+            <textarea rows="8" placeholder="Masukkan Pesan" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!------- Footer ------->
+
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Zikri Ramadhan</p>
+    </section>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
